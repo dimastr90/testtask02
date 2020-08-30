@@ -1,0 +1,25 @@
+{
+  "name": "testtask02",
+  "version": "1.0.0",
+  "description": "testask for aionys",
+  "main": "index.js",
+  "scripts": {
+    "installServMods": "cd  server && npm install",
+    "installClientMods": "cd  client && npm install",
+    "serverDEV": "cd  server && npm run serverDEV",
+    "server": "cd  server && npm run server",
+    "client": "cd client && npm run start",
+    "dev": "concurrently \"npm run serverDEV\" \"npm run client\"",
+    "app": "concurrently \"npm run server\" \"npm run client\"",
+    "installModules": "concurrently \"npm run installClientMods\" \"npm run installServMods\"",
+    "test:cypress": "start-server-and-test app http://localhost:3000 cypress",
+    "cypress": "cypress run"
+  },
+  "author": "Dima Stronov <dimstr90@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^5.3.0",
+    "cypress": "^5.0.0",
+    "start-server-and-test": "^1.11.3"
+  }
+}

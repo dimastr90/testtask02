@@ -1,0 +1,20 @@
+{
+  "name": "testtask02_server",
+  "version": "1.0.0",
+  "description": "backend server for testtask02",
+  "main": "app.js",
+  "scripts": {
+    "serverDEV": "nodemon app.js",
+    "server": "node app.js"
+  },
+  "author": "Dima Stronov <dimastr90@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "config": "^3.3.1",
+    "express": "^4.17.1",
+    "uuid": "^8.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

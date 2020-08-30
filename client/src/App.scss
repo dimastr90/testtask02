@@ -1,0 +1,160 @@
+@font-face {
+  font-family: "Reenie Beanie";
+  src: url("fonts/ReenieBeanie-Regular.ttf");
+}
+
+
+
+//App
+.content{
+  min-height: calc(100vh - 4em);
+}
+//End App
+
+//Navbar
+.navbar_title {
+  flex-grow: 1;
+}
+
+//End Navbar
+
+//AddNoteForm
+
+.addNoteForm {
+  margin-top: 1em;
+
+  .textArea {
+    text-align: center;
+
+    .textAreaComponent {
+      width: 60% !important;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      margin-bottom: 1em;
+    }
+  }
+
+  .addNoteButton {
+    text-align: center;
+
+    Button{
+      width:20em
+    }
+  }
+}
+
+//End AddNoteForm
+
+//Note
+.note {
+  width: 100%;
+  height: 15em;
+  color: #000;
+  overflow-y: auto;
+  border-radius: 5px;
+  background-color: rgb(255, 206, 1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+  pre {
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+    margin:0;
+    padding: 0.5em;
+    font-family: "Reenie Beanie", arial, sans-serif;
+    font-size: 180%;
+  }
+
+  .noteButtons {
+    float: right;
+    display: inline-block;
+    padding: 2px 5px;
+  }
+}
+
+.note-edit {
+  width: 100%;
+  height: 15em;
+  color: #000;
+  border-radius: 5px;
+  background-color: rgb(255, 206, 1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+  .noteEditButtons {
+    text-align: center;
+    padding: 2px 5px;
+  }
+  .noteChangeTextArea {
+    margin-left: 0.3em;
+    width: 95% !important;
+    height: 70% !important;
+  }
+}
+
+//Scroll
+
+.note::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+
+.note::-webkit-scrollbar
+{
+  border-radius: 10px;
+  width: 12px;
+  background-color: #F5F5F5;
+}
+
+.note::-webkit-scrollbar-thumb
+{
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #555;
+}
+
+.note {
+  scrollbar-color: #393939;
+  scrollbar-width: thin;
+}
+
+//End Note
+
+//NotesContainer
+
+.notesContainer {
+  margin-top: 3em;
+  margin-bottom: 3em;
+
+  .pagination{
+    margin-top: 2em;
+  }
+}
+
+//End NotesContainer
+
+
+//Footer
+
+.footer{
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4em;
+  background-color: #2b3a77;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+
+  p{
+    padding-top: 0.2em;
+    font-family: Roboto, serif;
+    color: antiquewhite;
+    font-size: larger;
+    margin:0;
+  }
+}
+
+//End Footer
