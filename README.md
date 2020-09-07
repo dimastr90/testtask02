@@ -27,9 +27,13 @@ Server is started on port 5001, front on 3000;
 
 1. 4 endpoints:
 GET /notes (get all notes)
+
 GET /notes/{id} (get specified note)
+
 POST /notes (create note)
+
 PUT /notes/{id} (update note)
+
 DELETE /notes/{id} (delete note)
 
 2. mocked database (do not use real database because it requires additional
